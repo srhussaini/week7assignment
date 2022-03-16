@@ -1,0 +1,585 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*header- navbar styling*/
+a{
+  text-decoration: none;
+  transition: 0.3s;
+}
+.header{
+  min-height: 100vh;
+  min-width: 100%;
+  padding-top: 2%;
+  background-image: url(../images/heroes.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.80;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+ nav .nav-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  padding: 2px;
+}
+ nav .nav-links ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+ nav .nav-links ul li{
+  display: inline-block;
+  position: relative;
+  padding: 8px 12px;
+}
+ nav .nav-links ul li a{
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: black;
+  font-weight: bold;
+}
+ nav .nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 5px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  }
+  nav .nav-links ul li a:active{
+    background-color: antiquewhite;
+    border-bottom: 1px solid #f44336;
+  }
+ nav .nav-links ul li:hover::after{
+    width: 100%;
+  }
+ nav .nav-links ul li a:hover{
+    background-color: antiquewhite;
+  }
+  
+
+  nav .fa{
+    display: none;
+  }
+
+  /*logo and about us styling*/
+ .logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    } 
+
+.aboutus{
+ width: 25%;
+ text-align: center;
+ display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 3%;
+transform: translate(0px,-100px);
+font-size: 20px;
+font-weight: bold;
+}
+.aboutus a{
+  display: inline-block;
+  padding: 3px 20px;
+  text-decoration: none;
+  border: 2px solid black;
+  position: relative;
+  background: transparent;
+  font-weight: lighter;
+  color: black;
+}
+.aboutus a:hover{
+  font-weight: bold;
+  background-color: antiquewhite;
+  transform: scale(1);
+  border: 4px solid #f44336;
+}
+
+/*curriculum styling*/
+.curriculum{
+  min-height: 500px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+ /* padding-top: 50px;*/
+  background-color: antiquewhite;
+}
+
+.curriculum h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.curriculum p{
+  color: #777;
+  font-weight: 300;
+  line-height: 22px;
+  padding-top: 10px;
+}
+.cur-cards{
+  /*margin-top: 5%;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cards{
+  margin: 5%;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  transition: 0.5s;
+}
+.cards img{
+  width: 100%;
+  height: 100%;
+}
+.cards:hover{
+  box-shadow: 5px 5px 10px 0 #0006,-5px 0px 10px 0 #0005;
+}
+.overlay{
+  background-color: rgba(244, 67, 54, 0.7);
+  position: absolute;
+  top: 260px;
+  width: 250px;
+  height: 40px;
+  overflow: hidden;
+  transition: all 1s ease-in-out .2s;
+  text-align: center;
+}
+.overlay h3{
+  padding: 3%;
+  color: white;
+}
+.overlay p{
+  color: white;
+}
+.overlay:hover{
+height: 300px;
+top: 0px;
+}
+/*section 1 styling*/
+
+.section1{
+  min-height: 500px;
+  background-image: url(../images/metalinsets.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  text-align: center;
+}
+.quote{
+  padding-top: 17%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  font-weight: bold;
+}
+/*admission section styling*/
+.admission{
+  background-color: antiquewhite;
+  min-height: 500px;
+  border: 1px solid antiquewhite;
+}
+aside{
+border: 1px solid antiquewhite;
+ width: 80%;
+ height: 500px;
+ margin: 50px auto;
+ background-image: url(../images/adm.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+ border-radius: 10px;
+}
+aside .adm{
+  margin: 5% auto;
+  width: 40%;
+  background-color: rgba(244, 67, 54, 0.7);
+  padding-bottom: 5%;
+  border-radius: 10px;
+ }
+aside .adm h1{
+  margin: 20px auto;
+  color: white;
+}
+aside .adm p{
+  color: white;
+}
+aside .adm a{
+  color: white;
+  display: inline-block;
+  padding: 3px 20px;
+  text-decoration: none;
+  border: 2px solid white;
+  position: relative;
+  background: transparent;
+}
+aside a:hover{
+  color: black;
+  padding: 2% 4%;
+  font-weight: bold;
+  background-color: antiquewhite;
+  transform: scale(1);
+  border: 4px solid #f44336;
+}
+
+/*section2 styling*/
+.section2{
+  min-height: 500px;
+  background-image: url(../images/brownstairs.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  text-align: center;
+}
+.quote2{
+  padding-top: 17%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  font-weight: bold;
+}
+/*schoolinfo styling*/
+h1{
+padding-top: 5%;
+width: 100%;
+}
+
+.schoolinfo{
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.card{
+  margin: 5%;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background-color: antiquewhite;
+}
+.card h2{
+  padding: 5%;
+}
+.card:hover{
+  box-shadow: 5px 5px 10px 0 #0006,-5px 0px 10px 0 #0005;
+}
+.card a{
+  display: inline-block;
+  padding: 3px 20px;
+  text-decoration: none;
+  border: 2px solid black;
+  position: relative;
+  background: transparent;
+  color: black;
+}
+.card a:hover{
+  font-weight: bold;
+  background-color: white;
+  transform: scale(1);
+  border: 4px solid #f44336;
+}
+
+/*section3 styling*/
+.section3{
+  min-height: 500px;
+  background-image: url(../images/mathbeads.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  text-align: center;
+}
+.section3 .quote3{
+  padding-top: 17%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  font-weight: bold;
+}
+/*review styling*/
+.review{
+  min-height: 400px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.tml{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.user{
+  margin: 3%;
+  width: 40%;
+  padding: 3%;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.checked{
+  color: #f44336;
+}
+
+/*footer styling*/
+footer{
+  min-height: 30px;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/*About Us page styling*/
+.sub-header{
+  min-height: 40vh;
+  min-width: 100%;
+  padding-top: 1%;
+  background-image: url(../images/about.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+}
+.abu{
+  width: 100%;
+  min-height: 500px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.abu h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.info{
+  margin-top: 3%;
+}
+.info p{
+  width: 80%;
+  margin: auto;
+}
+/*Curriculum page styling*/
+.main-content{
+  text-align: center;
+}
+.main-content h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.montessori{
+  margin-top: 4%;
+  width: 100%;
+  min-height: 500px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.method1{
+  width: 50%;
+  margin: 5%;
+}
+.method2 img{
+  border-radius: 50%;
+ transform: translate(-100px, 100px);
+ }
+ .preschool{
+  margin-top: 4%;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.preschool1{
+  width: 40%;
+  margin: 5%;
+}
+.preschool2 img{
+  border-radius: 50%;
+ transform: translate(100px, 40px);
+ }
+ .kinder{
+  margin-top: 4%;
+  width: 100%;
+  min-height: 500px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.kinder1{
+  width: 50%;
+  margin: 5%;
+}
+.kinder2 img{
+  border-radius: 50%;
+ transform: translate(-100px, 50px);
+ }
+/*Location page styling*/
+.local-header{
+  min-height: 40vh;
+  min-width: 100%;
+  padding-top: 1%;
+  background-image: url(../images/locate.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.80;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 626px) {
+
+  /*header nav-bar styling*/
+  header nav .nav-links ul li{
+    display: block;
+  }
+  header nav .nav-links{
+    position: absolute;
+    background-color: rgba(244, 67, 54, 0.7);
+    height: 100vh;
+    width: 50vw;
+    top: 0;
+    left: -55vw;
+    text-align: left;
+    z-index: 2;
+    overflow: hidden;
+  }
+  nav .fa{
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 22px;
+  }
+  nav .fa:hover{
+ top: 0%;
+ left: 50vw;
+  }
+  .aboutus{
+    font-size: 15px;
+    padding-top: 10%;
+  }
+/*section1 styling*/
+.quote{
+  font-size: 22px;
+  padding-top: 30%;
+}
+/*section2 styling*/
+.quote2{
+  font-size: 22px;
+  padding-top: 35%;
+}
+/*admission styling*/
+aside .adm{
+  width: 60%;
+  margin-top: 5%;
+}
+/*section3 styling*/
+.section3 .quote3{
+  font-size: 22px;
+  padding-top: 35%;
+}
+/*review styling*/
+.user{
+  padding: 5%;
+  margin: 5%;
+}
+
+}
+@media only screen and (max-width: 842px){
+  /*nav-bar styling*/
+  header nav .nav-links ul li{
+    padding: 0;
+  }
+  header nav .nav-links ul li a{
+    padding: 8px 10px;
+  }
+  /*section 1 styling*/
+  .quote{
+font-size: 22px;
+padding-top: 22%;
+  }
+  /*section2 styling*/
+  .quote2{
+    font-size: 22px;
+    padding-top: 24%;
+  }
+  /*admission section styling*/
+  aside .adm{
+    width: 50%;
+    margin-top: 10%;
+  }
+  /*section3 styling*/
+  .section3 .quote3{
+    font-size: 22px;
+    padding-top: 24%;
+  }
+}
+
+
+
+
+
